@@ -1,5 +1,5 @@
-FROM nginx
+FROM nginx:latest
 
-COPY . /website/:/usr/share/nginx/html:ro
+COPY website webfile.html 
 
-CMD ["nginx", "/usr/share/nginx/html:ro"]
+VOLUME website/webfile.html
