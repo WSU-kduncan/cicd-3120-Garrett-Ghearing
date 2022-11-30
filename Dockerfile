@@ -1,5 +1,6 @@
 FROM nginx:latest
 
-COPY website webfile.html 
 
-VOLUME website/webfile.html
+
+COPY ./website/webfile.html /usr/share/nginx/html/index.html 
+
