@@ -15,5 +15,3 @@ For this project I used nginx as my base image.
 - How to view the running website: curl localhost:8080 or web browser lacalhost:8080
 ---
 ##Part 2
-
-###
