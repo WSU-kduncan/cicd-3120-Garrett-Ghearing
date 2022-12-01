@@ -1,8 +1,8 @@
 # OverView
 For this project I used nginx as my base image.
 
-## Part 1
 ---
+## Part 1
 ### Installing Docker & Dependencies
 - I installed Docker by going to their offical website and downloading the desktop verision. I checked to make sure docker can be used in moba from this method by doing socker -v 
 - I did not need to install WSL2 or anything like it due to it already being on my local system 

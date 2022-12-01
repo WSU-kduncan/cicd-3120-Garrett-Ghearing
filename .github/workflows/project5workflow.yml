@@ -11,7 +11,7 @@ name: Publish Docker image
 
 on:
   release:
-    branches: [published]
+    branches: [main]
 
 jobs:
   push_to_registry:
