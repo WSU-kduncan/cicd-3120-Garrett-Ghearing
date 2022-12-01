@@ -15,3 +15,16 @@ For this project I used nginx as my base image.
 - How to view the running website: curl localhost:8080 or web browser lacalhost:8080
 ---
 ## Part 2
+
+### DockerHub
+- in order to create a repo in docker hub first your create an account then go to dashboard create a repo and select public 
+
+- You can authenticate with dockerhub by creating a dockerhub access token with the permissions you select based on your needs. 
+-- then go to command line and run docker login -u enter your username and when prompted for password enter copy paste your token 
+- Pushing to docker is done by running docker push ghearinggarrett/garrettproject5:firsttry
+to break this down it is docker push username/repo_name:tag_of_image
+
+### Github Actions
+- the github secrets i configured was my username and password for dockerhub
+- my workflow builds and pushes a image to dockerhub everytime a push is done onto main
+- what would need to be changed is the path to their dockerhub repo given it is based on your username and repo name. they will also need to create their own secerts in github for their docker username and token.
