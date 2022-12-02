@@ -35,12 +35,18 @@ to break this down it is docker push username/repo_name:tag
 -purpose of this .sh file is to be ran in order to stop and restart with the latest image on dockerhub.
 
 - I did this with the following steps:
-1. docker stop site this command stops the currently running image
-2. docker ps -a this is jsut for a visual to know that the script is working i left it in because I like seeing the updates happen 
-3. docker rm site  this will free up port 8080 for the next image to be built 
-4. docker ps -a this command not needed i just like seeing the updates 
-5. docker pull ghearinggarrett/garrettproject5 this command pulls the new image to your local machine 
-6. docker run -d -p 8080:80 --name site ghearinggarrett/garrettproject5:latest this command uses the latest image to build 
+1. docker stop site 
+  - this command stops the currently running image
+3. docker ps -a 
+  - this is just for a visual to know that the script is working i left it in because I like seeing the updates happen 
+4. docker rm site 
+  - this will free up port 8080 for the next image to be built 
+5. docker ps -a 
+  - this command not needed i just like seeing the updates 
+6. docker pull ghearinggarrett/garrettproject5 
+  - this command pulls the new image to your local machine 
+7. docker run -d -p 8080:80 --name site ghearinggarrett/garrettproject5:latest
+  - this command uses the latest image to build 
 ### Setting up WebHook
 - I did sudo apt-get hook in order to install webhooks I then created the .json script the purpose of this script is to run on port 9000 and once a gitpush is done on main and reaches the new image being created on docker the webhook is notitified it then runs the refresh script. 
 
