@@ -54,4 +54,4 @@ to break this down it is docker push username/repo_name:tag
 
 ### Docker notifier 
 - in order to setup a notifier in dockerhub you need to click on the webhook section
-it will then prompt you to enter a name then in the black space to the right by putting http://ipaddress:9000/id?Target=targetToken
+it will then prompt you to enter a name then in the black space to the right enter filled with your details http://ipaddress:9000/id?Target=targetToken
