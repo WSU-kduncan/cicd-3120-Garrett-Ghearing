@@ -1,5 +1,7 @@
 # OverView
+
 For this project I used nginx as my base image.
+![workflow diagram](https://user-images.githubusercontent.com/70773439/205379818-e96b697f-152c-4718-8bda-c2cd2849158f.PNG)
 
 ---
 ## Part 1
