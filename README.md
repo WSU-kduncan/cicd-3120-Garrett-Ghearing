@@ -7,7 +7,7 @@ For this project I used nginx as my base image.
 ## Part 1
 ### Installing Docker & Dependencies
 - I installed Docker by going to their offical website and downloading the desktop verision. I checked to make sure docker can be used in moba from this method by doing docker -v
--- Later in the project i needed to install docker on an ec2 instance to do this i found a guide posted by amazon that said to uninstall old verisions then run the command sudo apt install docker.io 
+    - Later in the project i needed to install docker on an ec2 instance to do this i found a guide posted by amazon that said to uninstall old verisions then run the command sudo apt install docker.io 
 - I did not need to install WSL2 or anything like it due to it already being on my local system 
 
 ### Create image and docker file
