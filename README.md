@@ -12,10 +12,10 @@ For this project I used nginx as my base image.
 
 ### Create image and docker file
 - in order to create a basic nginx image in the command line you need to run the command docker run -it -p 8080:80 nginx. this will start an image with all default files 
-- in order to run a custom website you must remove the default config files and then copy your website into that specfic area this is done while using RUN rm /etc/nginx/conf.d/default.conf in the dockerfile
+- in order to run a custom website you must override the default config files and then copy your website into that specfic area this is done by using COPY  ./website/webfile.html /usr/share/nginx/html/index.html
 -How to build a custom docker image: docker build -t web2:latest -t web2:0.15 .
 - how to run a custom docker image: docker run -it --rm -p 8080:80 --name web web2
-- How to view the running website: curl localhost:8080 or web browser lacalhost:8080
+- How to view the running website: curl localhost:8080 or web browser lacalhost:8080 or entering ipaddress:8080
 ---
 ## Part 2
 
