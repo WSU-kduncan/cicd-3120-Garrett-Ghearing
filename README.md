@@ -34,7 +34,7 @@ to break this down it is docker push username/repo_name:tag
 ---
 ## Part 3
 ### Refresh Script
--purpose of this .sh file is to be ran in order to stop and restart with the latest image on dockerhub.
+- purpose of this .sh file is to be ran in order to stop the older image and restart with the latest image on dockerhub.
 
 - I did this with the following steps:
 1. docker stop site 
