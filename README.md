@@ -36,7 +36,7 @@ to break this down it is docker push username/repo_name:tag
 
 - I did this with the following steps:
 1. docker stop site 
-  - this command stops the currently running image
+    - this command stops the currently running image
 3. docker ps -a 
   - this is just for a visual to know that the script is working i left it in because I like seeing the updates happen 
 4. docker rm site 
